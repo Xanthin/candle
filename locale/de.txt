@@ -1,0 +1,8 @@
+#Translation by Xanthin
+
+Candle = Kerze
+Tea Candle = Teelicht
+Fat Candle = Stumpenkerze
+Chandelier = Kronleuchter
+Waxy Stuff = Wachsmaterial
+Candelabra = Kandelaber
