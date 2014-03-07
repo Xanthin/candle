@@ -4,5 +4,5 @@ Candle = Kerze
 Tea Candle = Teelicht
 Fat Candle = Stumpenkerze
 Chandelier = Kronleuchter
-Waxy Stuff = Wachsmaterial
+Waxy Stuff = Wachs
 Candelabra = Kandelaber
