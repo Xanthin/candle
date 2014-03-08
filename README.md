@@ -1,4 +1,4 @@
-candles_int
+candle
 =======================
 
 It´s a fork of Dan Duncombe´s Simply Candles Mod [candle] (https://forum.minetest.net/viewtopic.php?id=5991), 
