@@ -10,8 +10,8 @@ end
 
 --The Blocks
 
-minetest.register_node("candles_int:basiccandle", {
-	drop = 'candles_int:basiccandle',
+minetest.register_node("candle:basiccandle", {
+	drop = 'candle:basiccandle',
 	description = S("Candle"),
 	drawtype = "plantlike",
 	sunlight_propogates=true,
@@ -21,8 +21,8 @@ minetest.register_node("candles_int:basiccandle", {
 	light_source=8
 })
 
-minetest.register_node("candles_int:teacandle", {
-	drop = 'candles_int:teacandle',
+minetest.register_node("candle:teacandle", {
+	drop = 'candle:teacandle',
 	description = S("Tea Candle"),
 	drawtype = "plantlike",
 	sunlight_propogates=true,
@@ -32,8 +32,8 @@ minetest.register_node("candles_int:teacandle", {
 	light_source=8
 })
 
-minetest.register_node("candles_int:fatcandle", {
-	drop = 'candles_int:fatcandle',
+minetest.register_node("candle:fatcandle", {
+	drop = 'candle:fatcandle',
 	description = S("Fat Candle"),
 	drawtype = "plantlike",
 	sunlight_propogates=true,
@@ -43,8 +43,8 @@ minetest.register_node("candles_int:fatcandle", {
 	light_source=8
 })
 
-minetest.register_node("candles_int:chandelier", {
-	drop = 'candles_int:chandelier',
+minetest.register_node("candle:chandelier", {
+	drop = 'candle:chandelier',
 	description = S("Chandelier"),
 	drawtype = "plantlike",
 	sunlight_propogates=true,
@@ -54,8 +54,8 @@ minetest.register_node("candles_int:chandelier", {
 	light_source=14
 })
 
-minetest.register_node("candles_int:waxystuff", {
-	drop = 'candles_int:waxystuff',
+minetest.register_node("candle:waxystuff", {
+	drop = 'candle:waxystuff',
 	description = S("Waxy Stuff"),
 	drawtype = "raillike",
 	sunlight_propogates=true,
@@ -64,8 +64,8 @@ minetest.register_node("candles_int:waxystuff", {
 	groups={level=1,oddly_breakable_by_hand=1},
 })
 
-minetest.register_node("candles_int:candelabra", {
-	drop = 'candles_int:candelabra',
+minetest.register_node("candle:candelabra", {
+	drop = 'candle:candelabra',
 	description = S("Candelabra"),
 	drawtype = "plantlike",
 	sunlight_propogates=true,
@@ -79,43 +79,43 @@ minetest.register_node("candles_int:candelabra", {
 --The Crafting Recipes
 
 minetest.register_craft({
-	output = "candles_int:basiccandle 2",
+	output = "candle:basiccandle 2",
 	recipe = {
 		{'', 'default:papyrus', ''},
-		{'candles_int:waxystuff', 'default:papyrus', 'candles_int:waxystuff'},
-		{'candles_int:waxystuff', 'default:papyrus', 'candles_int:waxystuff'},
+		{'candle:waxystuff', 'default:papyrus', 'candle:waxystuff'},
+		{'candle:waxystuff', 'default:papyrus', 'candle:waxystuff'},
 	}
 })
 
 minetest.register_craft({
-	output = "candles_int:teacandle 2",
+	output = "candle:teacandle 2",
 	recipe = {
 		{'', '', ''},
 		{'', 'default:papyrus', ''},
-		{'candles_int:waxystuff', 'candles_int:waxystuff', 'candles_int:waxystuff'},
+		{'candle:waxystuff', 'candle:waxystuff', 'candle:waxystuff'},
 	}
 })
 
 minetest.register_craft({
-	output = "candles_int:fatcandle 2",
+	output = "candle:fatcandle 2",
 	recipe = {
 		{'', 'default:papyrus', ''},
-		{'candles_int:waxystuff', 'candles_int:waxystuff', 'candles_int:waxystuff'},
-		{'candles_int:waxystuff', 'candles_int:waxystuff', 'candles_int:waxystuff'},
+		{'candle:waxystuff', 'candle:waxystuff', 'candle:waxystuff'},
+		{'candle:waxystuff', 'candle:waxystuff', 'candle:waxystuff'},
 	}
 })
 
 minetest.register_craft({
-	output = "candles_int:chandelier 1",
+	output = "candle:chandelier 1",
 	recipe = {
 		{'', 'default:steel_ingot', ''},
-		{'candles_int:basiccandle', 'default:steel_ingot', 'candles_int:basiccandle'},
+		{'candle:basiccandle', 'default:steel_ingot', 'candle:basiccandle'},
 		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
 	}
 })
 
 minetest.register_craft({
-	output = "candles_int:waxystuff 4",
+	output = "candle:waxystuff 4",
 	recipe = {
 		{'', '', ''},
 		{'', 'default:leaves', ''},
@@ -124,9 +124,9 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "candles_int:candelabra 1",
+	output = "candle:candelabra 1",
 	recipe = {
-		{'candles_int:basiccandle', 'candles_int:basiccandle', 'candles_int:basiccandle'},
+		{'candle:basiccandle', 'candle:basiccandle', 'candle:basiccandle'},
 		{'', 'default:steel_ingot', ''},
 		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
 	}
